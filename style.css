@@ -153,3 +153,7 @@ nav ul li a:hover::after{
 .tab-contents{
     display: none;
 }
+
+.tab-contents.active-tab{
+    display: block;
+}

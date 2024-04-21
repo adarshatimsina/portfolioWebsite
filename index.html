@@ -38,46 +38,36 @@
                     <div class="about-col-2">
                         <h1 class="sub-title"> About Me</h1>
                         <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Maiores ut,
-                             minima ratione, enim quam at in quasi eligendi eos odio sapiente excepturi et
-                              cupiditate. Reprehenderit consequuntur quaerat eos soluta reiciendis.</p>
-
+                            minima ratione, enim quam at in quasi eligendi eos odio sapiente excepturi et
+                            cupiditate. Reprehenderit consequuntur quaerat eos soluta reiciendis.</p>
+                    
                         <div class="tab-titles">
                             <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
-                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
-                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                            <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('Education')">Education</p>
                         </div>
-
-
-                        <div class="tab-contents active-tab" - id="Skills">
+                        <div class="tab-contents active-tab" id="Skills">
                             <ul>
                                 <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
                                 <li><span>Web Development</span><br>Website Development</li>
                                 <li><span>Photographer</span><br>Hobbyist Photographer</li>
                             </ul>
                         </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>Graphics Designing</span><br>About 4yrs Experience</li>
+                                <li><span>Copywriting</span><br>2yrs</li>
+                                <li><span>Photography/Videography</span><br>About 5yrs</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>SEE</span><br>Little Angels School</li>
+                                <li><span>+2</span><br>Little Angels College</li>
+                                <li><span>Bachelor</span><br>Infomax College</li>
+                            </ul>
+                        </div>
                     </div>
-
-                    <div class="tab-contents"- id="Experience">
-                        <ul>
-                            <li><span>Graphics Designing</span><br>About 4yrs Experience</li>
-                            <li><span>Copywriting</span><br>2yrs</li>
-                            <li><span>Photography/Videography</span><br>About 5yrs</li>
-                        </ul>
-                    </div>
-                </div>
-
-
-                <div class="tab-contents" - id="Education">
-                    <ul>
-                        <li><span>SEE</span><br>Little Angels School</li>
-                        <li><span>+2</span><br>Little Angels College</li>
-                        <li><span>Bachelor</span><br>Infomax College</li>
-                    </ul>
-                </div>
-            </div>
-
-
-
                 </div>
             </div>
         </div>
@@ -94,7 +84,8 @@
             for(tabcontent of tabcontents){
                 tabcontent.classList.remove("active-tab");
             }
-
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
             }
 
         </script>
