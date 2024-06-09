@@ -341,3 +341,8 @@ nav ul li a:hover::after{
     transform: translateY(-5px);
 }
 
+
+.btn.btn2{
+    display: inline-block;
+    background: #5E17EB;
+}
